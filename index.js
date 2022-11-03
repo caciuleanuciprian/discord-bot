@@ -5,6 +5,8 @@ const { Routes } = require("discord-api-types/v9");
 const { Client, GatewayIntentBits, Collection } = require("discord.js");
 const { Player } = require("discord-player");
 
+const keepAlive = require("./keepAlive.js");
+
 const fs = require("node:fs");
 const path = require("node:path");
 
@@ -14,6 +16,7 @@ const client = new Client({
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.GuildVoiceStates,
   ],
+  disableEveryone: true,
 });
 
 const commands = [];
@@ -74,12 +77,5 @@ client.on("interactionCreate", async (interaction) => {
   }
 });
 
+keepAlive();
 client.login(process.env.TOKEN);
-
-var http = require("http");
-http
-  .createServer(function (req, res) {
-    res.write("I'm alive");
-    res.end();
-  })
-  .listen(8080);
