@@ -57,9 +57,11 @@ Start the server
 
 ✅ Add music commands
 
-⬜️ Add Apex Legends related information using Apex Legends API
+✅ Add Apex Legends related information using Apex Legends API
 
 ⬜️ Add a meme generator
 
 ⬜️ Add minigames
+
+⬜️ Add League of Legends related stats using Riot Games API
 
