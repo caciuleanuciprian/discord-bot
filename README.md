@@ -14,6 +14,12 @@ To run this project, you will need to add the following environment variables to
 
 `CLIENT_ID` = `YOUR_CLIENT_ID`
 
+`APEX_API_KEY` = `YOUR_APEX_API_KEY` - https://apexlegendsapi.com/
+
+`WEBHOOK_ID` = `YOUR_WEBHOOK_ID` - required for Apex Legends API
+
+`WEBHOOK_TOKEN` = `YOUR_WEBHOOK_TOKEN` - required for Apex Legends API
+
 
 ## Run Locally
 
