@@ -50,6 +50,7 @@ Start the server
 
 ## Supported commands
 
+Music
 - /play [song, playlist, search] - Plays a song/playlist
 - /pause - Pauses current song
 - /resume - Resumes current song
@@ -57,6 +58,9 @@ Start the server
 - /stop - Stops current song
 - /queue - Shows the first 10 songs in the queue
 
+Apex Legends
+- /map [current/next] - Shows the current/next map.
+- /crafting - Shows the current crafting rotation.
 
 
 ## Roadmap
