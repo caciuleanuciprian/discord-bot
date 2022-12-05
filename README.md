@@ -64,12 +64,16 @@ Apex Legends
 - /map [current/next] - Shows the current/next map.
 - /crafting - Shows the current crafting rotation.
 
+Other
+- /specs - Shows the specifications of your PC.
 
 ## Roadmap
 
 ✅ Add music commands
 
 ✅ Add Apex Legends related information using Apex Legends API
+
+✅ Add System Informations command
 
 ⬜️ Add a meme generator
 
