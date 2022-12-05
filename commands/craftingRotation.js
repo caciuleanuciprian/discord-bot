@@ -14,6 +14,8 @@ module.exports = {
     .setName("crafting")
     .setDescription("Shows the current map rotation."),
   execute: async ({ interaction }) => {
+    await interaction.deferReply();
+
     const res = await axios.get(
       `https://api.mozambiquehe.re/crafting?auth=${process.env.APEX_API_KEY}`
     );
@@ -54,12 +56,12 @@ module.exports = {
       return;
     }
 
-    webhookClient.send({
+    await webhookClient.send({
       content: "Current crafting rotation:",
       embeds: itemList,
     });
 
-    console.log(webhookClient);
+    await interaction.editReply("Here you go, king 👑");
 
     itemList = [];
     webhookClient.destroy();
